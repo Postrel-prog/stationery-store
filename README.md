@@ -2,6 +2,10 @@
 
 A responsive stationery catalogue and shopping cart built with HTML, CSS and vanilla JavaScript.
 
+## Live demo
+
+[Open Stationery Store](https://postrel-prog.github.io/stationery-store/)
+
 ## Features
 
 - Product search, availability filtering and price sorting
