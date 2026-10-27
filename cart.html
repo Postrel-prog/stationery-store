@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your Cart — Stationery Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1 class="first-head-text">Your Cart</h1>
+    
+    <div class="productsAndFinish">
+    <a href="./index.html" class="backToMain">Continue shopping</a>
+    <ul id="inBascet"></ul>
+    <p id="catchErrorBasct"></p>
+    <div id="emptyBascet" class="emptyBascet"></div>
+
+    <div class="end-basct">
+        <div class="top-end-basct">
+            <span class="sum-price-basct">Total </span><span id="sum-price" class="sum-price-basct-num"></span>
+        </div>
+            <div class="sum-divider"></div>
+        <div class="botm-end-basct">
+            <span class="sum-prod-to-order">Items: </span>&nbsp<span class="sum-prod-to-order" id="sum-prod"> </span>
+            <button id="end-order" class="end-order" type="button">Review demo order</button>
+        </div>
+    </div>
+    </div>
+    
+    <dialog id="windowAfterOrder" class="end-order-window" aria-labelledby="demo-title"><h2 id="demo-title">Demo order summary</h2>
+        <span class="text-to-end-order">This is a demo. No order has been submitted
+        and no payment has been taken.</span>
+        <ul id="ulToEndOrder"></ul>
+        <div class="quns-items-to-end-order">
+            <span>Items:</span>&nbsp<span id="sum-prod-end-order"></span>
+        </div>
+        <div class="price-items-to-end-order">
+            <span>Total:</span>&nbsp<span id="sum-price-end-order"></span>
+        </div>
+        <button type="button" id="closeWindow" autofocus>Close</button>
+    </dialog>
+
+    <script src="./cart.js" type="module"></script>
+</body>
+</html>

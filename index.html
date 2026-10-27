@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stationery Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1 class="first-head-text">Stationery Store</h1>
+    <form id="form-for-search" class="form-for-search">
+    <div class="label-and-owner">
+        <label for="input-for-search">Search products</label>
+        <input id="input-for-search" placeholder="Enter a product name" class="search-input search-input-title">
+    </div>
+    <div class="label-and-owner"><label for="products-check">Availability</label>
+        <select id="products-check" required class="search-input">
+            <option value="all-product">All products</option>
+            <option value="in-stocks">In stock</option>
+            <option value="not-in-stocks">Out of stock</option>
+        </select>
+    </div>
+    <div class="label-and-owner"><label for="products-check-price">Sort by</label>
+    <select id="products-check-price" required class="search-input">
+        <option value="like-base">Default order</option>
+        <option value="first-cheap">Price: low to high</option>
+        <option value="first-expensive">Price: high to low</option>
+    </select>
+    </div>
+    <div class="button-and-basc">
+        <button id="search-button"><img src="img/search.png" width="15" height="15" alt=""> Search</button>
+        <button id="search-button-back" type="button" class="search-button-back">Reset</button>
+        <a href="./cart.html" id="bascet-button">Cart: <span id="num-bascet"></span></a>
+        <span class="sum-price">Total: <span id="sum-price"></span></span>
+    </div>
+    </form>
+    <ul id="products-to-site" class="all-Prod-List"></ul>
+    <p id="error-text"></p>
+    <p id="catchError"></p>
+
+<script src="./catalog.js" type="module"></script>
+</body>
+</html>
